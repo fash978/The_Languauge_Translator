@@ -24,7 +24,26 @@ yoruba_dictionary  = {
 }
 
 igbo_dictionary = {
-    
+    "hellow": "kedu",  
+    "Thank you": "Imena",
+    "sorry": "Ndo",
+    "water": "Mniri",
+    "Goodbye": "Ka omesia",
+    "food": "Nri",
+    "House": "Ulo",
+    "Please": "Biko",
+    "Family": "Ezinuio",
+    "Mother": "Nne",
+    "Father": "Nna",
+    "Child": "Nwa",
+    "Friend": "Enyi",
+    "Day": "Ubochi",
+    "Night": "Abali",
+    "One": "Otu",
+    "Two": "Abuo",
+    "Good": "Oma",
+    "Yes": "Ee",
+    "Love": "Ihunaya"
    
 }
 
