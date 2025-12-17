@@ -24,7 +24,7 @@ yoruba_dictionary  = {
 }
 
 igbo_dictionary = {
-    "hellow": "kedu",  
+    "hello": "kedu",  
     "Thank you": "Imena",
     "sorry": "Ndo",
     "water": "Mniri",
