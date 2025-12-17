@@ -29,6 +29,26 @@ igbo_dictionary = {
 }
 
 zulu_dictionary = {
+    "good morning" : "sawubona",
+    "come" : "woza",
+    "enter" : "faka",
+    "say" : "ukuthi",
+    "go" : "hamba",
+    "wash" : "ukuhlamba",
+    "big" : "inkulu",
+    "dog" : "inja",
+    "food" : "ukudla",
+    "short" : "okufutshane",
+    "brother" : "mfowethu",
+    "hear" : "zwa",
+    "talk" : "inkulumo",
+    "sister" : "dadewethu",
+    "sing" : "hlabelelani",
+    "run" : "gijima",
+    "fan" : "umlandeli",
+    "car" : "imoto",
+    "chair" : "isihlalo",
+    "eat" : "yidla",
 
 }
 
