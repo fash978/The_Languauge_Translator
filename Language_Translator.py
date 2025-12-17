@@ -72,7 +72,7 @@ zulu_dictionary = {
 }
 
 hausa_dictionary = {
-     "hello": "Sannu",
+    "hello": "Sannu",
     "bye": "Sai anjima",
     "good morning": "Ina kwana",
     "good evening": "Barka da yamma",
@@ -91,9 +91,6 @@ hausa_dictionary = {
     "brother": "Dan'uwa",
     "sister": "Yar'uwa",
     "school": "Makaranta",
-}
-
-   
 }
 
 igala_dictionary = {
