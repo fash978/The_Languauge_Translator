@@ -103,26 +103,26 @@ print("select language you want to translate among : Yoruba, Igbo, Zulu, Hausa, 
 print() 
 language = input("INPUT LANGUAGE HERE : ")
 print()
-if language == "Yoruba".lower().upper():
-   translation = input("Input yoruba word or phrase : ").lower().upper()
+if language == "Yoruba" or "YORUBA" or "yoruba":
+   translation = input("Input yoruba word or phrase : ").lower() or upper()
    print(yoruba_dictionary[translation])
 
-elif language == "Igbo".lower().upper():
-    translation = input("Input igbo word or phrase : ").lower().upper()
+elif language == "Igbo" or "IGBO" or "igbo":
+    translation = input("Input igbo word or phrase : ").lower() or upper()
     print(igbo_dictionary[translation])
 
-elif language == "Zulu".lower().upper():
-    translation = input("Input zulu word or phrase :").lower().upper()
+elif language == "Zulu" or "ZULU" or "zulu":
+    translation = input("Input zulu word or phrase :").lower() or upper()
     print(zulu_dictionary[translation])
 
-elif language == "Hausa".lower().upper():
-    translation = input("Input hausa word or phrase :").lower().upper()
+elif language == "Hausa" or "HAUSA" or "hausa":
+    translation = input("Input hausa word or phrase :").lower() or upper()
     print(hausa_dictionary[translation])
 
-elif language == "Igala".lower().upper():
-    translation = input("Input igala word or phrase :").lower().upper()
+elif language == "Igala" or "IGALA" or "igala":
+    translation = input("Input igala word or phrase :").lower() or upper()
     print(igala_dictionary[translation])
 
 else:
-    print()
+    print( "THIS WORD NOT AVAILABLE")
     
