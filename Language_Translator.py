@@ -97,32 +97,32 @@ igala_dictionary = {
 
 }
 
+dictionaries = {
+    "yoruba": yoruba_dictionary,
+    "igbo": igbo_dictionary,
+    "zulu": zulu_dictionary,
+    "hausa": hausa_dictionary,
+    "igala": igala_dictionary,
+}
+
 print("LANGUAGE TRANSLATOR")
 print()
 print("select language you want to translate among : Yoruba, Igbo, Zulu, Hausa, Igala")
-print() 
-language = input("INPUT LANGUAGE HERE : ")
 print()
-if language == "Yoruba" or "YORUBA" or "yoruba":
-   translation = input("Input yoruba word or phrase : ").lower() or upper()
-   print(yoruba_dictionary[translation])
+while True:
+    language = input("INPUT LANGUAGE HERE : ").lower()
+    print()
 
-elif language == "Igbo" or "IGBO" or "igbo":
-    translation = input("Input igbo word or phrase : ").lower() or upper()
-    print(igbo_dictionary[translation])
+    if language in dictionaries:
+        if not dictionaries[language]:
+            print(f"The {language.capitalize()} dictionary is empty.")
+        else:
+            translation = input(f"Input {language} word or phrase: ").lower()
+            if translation in dictionaries[language]:
+                print(dictionaries[language][translation])
+            else:
+                print("THIS WORD NOT AVAILABLE")
+    else:
+        print("LANGUAGE NOT AVAILABLE")
 
-elif language == "Zulu" or "ZULU" or "zulu":
-    translation = input("Input zulu word or phrase :").lower() or upper()
-    print(zulu_dictionary[translation])
-
-elif language == "Hausa" or "HAUSA" or "hausa":
-    translation = input("Input hausa word or phrase :").lower() or upper()
-    print(hausa_dictionary[translation])
-
-elif language == "Igala" or "IGALA" or "igala":
-    translation = input("Input igala word or phrase :").lower() or upper()
-    print(igala_dictionary[translation])
-
-else:
-    print( "THIS WORD NOT AVAILABLE")
-    
+        print()
