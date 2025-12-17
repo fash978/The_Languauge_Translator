@@ -72,6 +72,27 @@ zulu_dictionary = {
 }
 
 hausa_dictionary = {
+     "hello": "Sannu",
+    "bye": "Sai anjima",
+    "good morning": "Ina kwana",
+    "good evening": "Barka da yamma",
+    "welcome": "Maraba",
+    "thank you": "Nagode",
+    "food": "Abinci",
+    "how are you": "Yaya kake?",
+    "come": "Zo",
+    "go": "Tafi",
+    "father": "Uba",
+    "mother": "Uwa",
+    "boy": "Yaro",
+    "girl": "Yarinya",
+    "money": "Kudi",
+    "what is your name": "Menene sunanka?",
+    "brother": "Dan'uwa",
+    "sister": "Yar'uwa",
+    "school": "Makaranta",
+}
+
    
 }
 
