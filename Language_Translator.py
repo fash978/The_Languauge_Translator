@@ -1,5 +1,5 @@
-#fasola omogbolahan
-yoruba_dictionary  = {
+
+yoruba_dictionary  = { # FASOLA OMOGBOLAHAN 
     "hello": "Ẹ ǹlẹ́",
     "bye" : "Ó dàbọ̀",
     "good morning" : "e kaaro",
@@ -23,7 +23,7 @@ yoruba_dictionary  = {
 
 }
 
-igbo_dictionary = {
+igbo_dictionary = { #ANYANWU KELVIN
     "hello": "kedu",  
     "Thank you": "Imena",
     "sorry": "Ndo",
@@ -47,7 +47,7 @@ igbo_dictionary = {
    
 }
 
-zulu_dictionary = {
+zulu_dictionary = { #CHUKWUBUIKEM EMERALD
     "good morning" : "sawubona",
     "come" : "woza",
     "enter" : "faka",
@@ -71,7 +71,7 @@ zulu_dictionary = {
 
 }
 
-hausa_dictionary = {
+hausa_dictionary = { #WILLIAM PANAM
     "hello": "Sannu",
     "bye": "Sai anjima",
     "good morning": "Ina kwana",
@@ -93,7 +93,7 @@ hausa_dictionary = {
     "school": "Makaranta",
 }
 
-igala_dictionary = {
+igala_dictionary = { #EBIJE SHEKINAH PRINCESS
 "hello": "àgba",
 "bye" : "chegbà tó bà",
 "good morning" : "olodu",
@@ -125,6 +125,7 @@ dictionaries = {
     "igala": igala_dictionary,
 }
 
+#FASOLA OMOGBOLAHAN 
 print("LANGUAGE TRANSLATOR")
 print()
 print("select language you want to translate among : Yoruba, Igbo, Zulu, Hausa, Igala")
