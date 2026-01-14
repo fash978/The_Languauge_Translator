@@ -1,4 +1,4 @@
-
+import streamlit as st
 yoruba_dictionary  = { # FASOLA OMOGBOLAHAN BHU/25/04/05/0020 
     "hello": "Ẹ ǹlẹ́",
     "bye" : "Ó dàbọ̀",
