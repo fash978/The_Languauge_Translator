@@ -1,5 +1,5 @@
 
-yoruba_dictionary  = { # FASOLA OMOGBOLAHAN 
+yoruba_dictionary  = { # FASOLA OMOGBOLAHAN BHU/25/04/05/0020 
     "hello": "Ẹ ǹlẹ́",
     "bye" : "Ó dàbọ̀",
     "good morning" : "e kaaro",
@@ -125,25 +125,24 @@ dictionaries = {
     "igala": igala_dictionary,
 }
 
-#FASOLA OMOGBOLAHAN 
-print("LANGUAGE TRANSLATOR")
-print()
-print("select language you want to translate among : Yoruba, Igbo, Zulu, Hausa, Igala")
-print()
-while True:
-    language = input("INPUT LANGUAGE HERE : ").lower()
-    print()
+#FASOLA OMOGBOLAHAN BHU/25/04/05/0020
+st.title("Language Translator")
+st.markdown("## Welcome to the Language Translator App")
 
-    if language in dictionaries:
-        if not dictionaries[language]:
-            print(f"The {language.capitalize()} dictionary is empty.")
-        else:
-            translation = input(f"Input {language} word or phrase: ").lower()
-            if translation in dictionaries[language]:
-                print(dictionaries[language][translation])
-            else:
-                print("THIS WORD NOT AVAILABLE")
-    else:
-        print("LANGUAGE NOT AVAILABLE")
+language = st.sidebar.selectbox(
+    "Select language you want to translate among:", dictionaries.keys())
 
-        print()
+if language:
+    selected_dictionary = dictionaries[language]
+    word_to_translate = st.selectbox(
+        f"Select a word to translate to {language.capitalize()}:", 
+        options=[""] + list(selected_dictionary.keys()))
+if st.button("Translate"):
+    if word_to_translate:
+        translation = selected_dictionary.get(word_to_translate, "Translation not found.")
+        st.divider()
+        st.subheader(f"The translation of '{word_to_translate}' in {language.capitalize()} is: {translation}")
+        st.success(f"**{translation}**")
+        st.balloons()
+        st.write ("Thank you for using the Language Translator App!")
+        st.feedback()
